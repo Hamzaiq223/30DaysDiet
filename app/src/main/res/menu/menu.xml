@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+
+    >
+    <item
+        android:id="@+id/nav_diet_plan"
+        android:title="Diet Plan" />
+
+    <item
+        android:id="@+id/nav_reset_records"
+        android:title="Reset Records" />
+
+    <item
+        android:id="@+id/nav_privacy_policy"
+        android:title="Currency Converter" />
+
+    <item
+        android:id="@+id/nav_rate_us"
+        android:title="Rate Us" />
+
+
+</menu>
