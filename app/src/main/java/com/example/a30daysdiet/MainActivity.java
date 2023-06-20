@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DrawerLayout drawerLayout = findViewById(R.id.my_drawer_layout);
+         drawerLayout = findViewById(R.id.my_drawer_layout);
          navigationView = findViewById(R.id.navigation_view);
          frameLayout = findViewById(R.id.fragment_container);
 
