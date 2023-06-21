@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
-        Days days = new Days();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, days).commit();
+        DietPlan dietPlan = new DietPlan();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, dietPlan).commit();
 
         drawerLayout = findViewById(R.id.my_drawer_layout);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
