@@ -20,6 +20,8 @@ import android.widget.TextView;
 
 import com.example.a30daysdiet.R;
 
+import org.w3c.dom.Text;
+
 
 public class DietPlan extends Fragment {
 
@@ -44,20 +46,17 @@ public class DietPlan extends Fragment {
 
         tv30Days.setOnClickListener(view1 -> {
             viewPager.setCurrentItem(0);
-            tv30Days.setBackgroundResource(R.color.app_color);
-            tv30Days.setTextColor(ContextCompat.getColor(requireContext(),R.color.white));
+            selectButton(tv30Days,tvSetWater,tvShopping);
         });
 
         tvSetWater.setOnClickListener(view2 -> {
             viewPager.setCurrentItem(1);
-            tvSetWater.setBackgroundResource(R.color.app_color);
-            tvSetWater.setTextColor(ContextCompat.getColor(requireContext(),R.color.white));
+            selectButton(tvSetWater,tvShopping,tv30Days);
         });
 
         tvShopping.setOnClickListener(view3 -> {
             viewPager.setCurrentItem(2);
-            tvShopping.setBackgroundResource(R.color.app_color);
-            tvShopping.setTextColor(ContextCompat.getColor(requireContext(),R.color.white));
+            selectButton(tvShopping,tv30Days,tvSetWater);
         });
     }
 
@@ -78,7 +77,7 @@ public class DietPlan extends Fragment {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new Days();
+                    return new DaysFragment();
                 case 1:
                     return new Water();
                 case 2:
@@ -93,5 +92,13 @@ public class DietPlan extends Fragment {
             return NUM_FRAGMENTS;
         }
     }
-
+    private void selectButton(TextView textView1, TextView textView2, TextView textView3)
+    {
+        textView1.setBackgroundResource(R.color.app_color);
+        textView1.setTextColor(ContextCompat.getColor(requireContext(),R.color.white));
+        textView2.setBackgroundResource(R.drawable.button_background_selected);
+        textView2.setTextColor(ContextCompat.getColor(requireContext(),R.color.app_color));
+        textView3.setBackgroundResource(R.drawable.button_background_selected);
+        textView3.setTextColor(ContextCompat.getColor(requireContext(),R.color.app_color));
+    }
 }

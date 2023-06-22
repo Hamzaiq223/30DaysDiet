@@ -9,4 +9,6 @@
     <string name="set_watcher">Set Watcher</string>
     <string name="shopping">Shopping</string>
     <string name="set_water">Set Watcher</string>
+    <string name="dummy_day"> Day 1</string>
+    <string name="day">Day</string>
 </resources>

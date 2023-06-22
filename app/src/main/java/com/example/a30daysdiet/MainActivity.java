@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-import com.example.a30daysdiet.Fragments.Days;
 import com.example.a30daysdiet.Fragments.DietPlan;
 import com.google.android.material.navigation.NavigationView;
 
